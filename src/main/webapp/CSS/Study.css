@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#AD4328;
+    --black: #222;
+    --white:#F6FBF4;
+    --light-black:#777;
+    --light-white:#fff9;
+    --button-color: #eb3b5a;
+    --darkb-bg:rgba(0,0,0,.7);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3); 
+}
+
+*{
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;padding: 0;
+    outline: none;border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62%;
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: .5rem;
+}
+
+/* headre section  */
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    background-color:var(--white);
+    padding-right: 4rem;
+    display: flex;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+    margin-left: 5rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--black);
+}
+.header .navbar a{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 1rem;
+    color: var(--black);
+}
+
+.header .navbar a span{
+    color: aqua;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+  /* body of the page  */
+
+h1{
+    margin-bottom: 7rem;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 5rem;
+    border-bottom:.2rem var(--light-black) solid;
+    margin: 5rem 18rem;
+}
+.qp .slide{
+    width: 30rem;
+    height: 30rem;
+    background-color: white;
+    border: double var(--main-color);
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 10rem;
+    border-radius: .2rem;
+    transition: .3s;
+}
+
+.qp .slide:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.qp .slide img {
+    width:35rem;
+    height: 20rem;
+    border: solid 2px var(--black);
+    border-radius: .1rem;
+}
+
+.qpbtn{
+    margin-top: 2rem;
+    width: 10rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    transition:all .3s ease-out;
+}
+
+.qpbtn:hover{
+    background-color: grey;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--light-black);
+   
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--main-color);
+   
+
+}
+
+h5{
+    font-size: 4rem;
+    width: 14rem;
+    border-radius: .5rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: var(--button-color);
+    color: white;
+}
+
+
+
+
+
+
+/* media queries */
+
+@media(max-width:1024px){
+    .qp .slide img {
+        width:25rem;
+        height: 15rem;
+    }
+}
+
+@media(max-width:768px){
+    h1{
+        font-size: 3rem;
+    }
+}
+
+
+@media(max-width:689px){
+    
+    .qp .slide{
+    width: 10rem;
+    height: fit-content;
+    }
+    .qp .slide img {
+        width:30rem;
+        height: 15rem
+    }
+    h1{
+        font-size: 1rem;
+    }
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+}
