@@ -38,7 +38,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 		 
 	 }else {
 		 if(urs.getPassword().equals(password)) {
-			 req.getSession().setAttribute("urs", urs);
+			 req.getSession().setAttribute("Users", urs);
              req.getRequestDispatcher("Home.jsp").include(req, resp);
 			 		
 			 

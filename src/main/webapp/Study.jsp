@@ -16,10 +16,9 @@
 
 </head>
 <body>
-         <%if(session.getAttribute("urs")==null)
+         <%if(session.getAttribute("Users")==null)
 {
-	response.getWriter().print(" <html><body><span style='color:red; position:relative; top:8.5rem; left: 52.4rem;  z-index:5; font-size:1.2rem; font-family: system-ui;'>Session Expired Login Again!</span></body></html>");
-	request.getRequestDispatcher("Login.html").include(request, response);
+        	 response.sendRedirect("Login.html");
 }else{
 %>
       <!----------------header section------------>
@@ -50,64 +49,64 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide slide">
-               <img src="question_Papers.jpg" alt="">
-               <a  href="kannada1 (1).PDF"><button class="qpbtn"><h3>kannada</h3></button></a>
+               <img src="Images/question_Papers.jpg" alt="">
+               <a  href="Pdf/kannada1 (1).PDF"><button class="qpbtn"><h3>kannada</h3></button></a>
             </div>
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-               <a href="hindi1.PDF"><button class="qpbtn"><h3>hindi</h3></button></a> 
+                <img src="Images/question_Papers.jpg" alt="">
+               <a href="Pdf/hindi1.PDF"><button class="qpbtn"><h3>hindi</h3></button></a> 
             </div> 
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='english2.pdf'"><h3>english</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/english2.PDF"><button class="qpbtn"><h3>english</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='sanskrit1.pdf'"><h3>Sankrit</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/Sanskrit1.PDF"><button class="qpbtn"><h3>Sankrit</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='maths1.pdf'"><h3>maths</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/maths1.PDF"><button class="qpbtn"><h3>maths</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='CF1.pdf'"><h3>CF</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/CF1.PDF"><button class="qpbtn"><h3>CF</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='cp1.pdf'"><h3>CP</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/CP1.PDF"><button class="qpbtn"><h3>CP</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='df1.pdf'"><h3>DF</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/DF1.PDF"><button class="qpbtn"><h3>DF</h3></button></a>
                 
             </div>
 
  
              <div class="swiper-slide slide">
-                 <img src="question_Papers.jpg" alt="">
-                 <button class="qpbtn" onclick="location.href='maths2.pdf'"><h3>maths-2</h3></button>
+                 <img src="Images/question_Papers.jpg" alt="">
+                 <a href="Pdf/maths2.PDF"><button class="qpbtn"><h3>maths-2</h3></button></a>
              </div>
  
              <div class="swiper-slide slide">
-                 <img src="question_Papers.jpg" alt="">
-                 <button class="qpbtn" onclick="location.href='coa1.pdf'"><h3>COA</h3></button>
+                 <img src="Images/question_Papers.jpg" alt="">
+                 <a href="Pdf/coa1.PDF"><button class="qpbtn"><h3>COA</h3></button></a>
              </div>
  
              <div class="swiper-slide slide">
-                 <img src="question_Papers.jpg" alt="">
-                 <button class="qpbtn" onclick="location.href='sp1.pdf'"><h3>SP</h3></button>
+                 <img src="Images/question_Papers.jpg" alt="">
+                 <a href="Pdf/SP1.PDF"><button class="qpbtn"><h3>SP</h3></button></a>
              </div>
  
              <div class="swiper-slide slide">
-                 <img src="question_Papers.jpg" alt="">
-                 <button class="qpbtn" onclick="location.href='c1.pdf'"><h3>C</h3></button>
+                 <img src="Images/question_Papers.jpg" alt="">
+                 <a href="Pdf/C1.PDF"><button class="qpbtn"><h3>C</h3></button></a>
                  
              </div>
  
@@ -129,60 +128,60 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide slide">
-               <img src="question_Papers.jpg" alt="">
-               <button class="qpbtn"  onclick="location.href='kannada2.pdf'"><h3>kannada</h3></button>
+               <img src="Images/question_Papers.jpg" alt="">
+               <a href="Pdf/kannada2.PDF"><button class="qpbtn"><h3>kannada</h3></button></a>
             </div>
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='hindi2.pdf'"><h3>hindi</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/hindi2.PDF"><button class="qpbtn"><h3>hindi</h3></button></a>
             </div> 
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='sanskrit2.pdf'"><h3>sankrit</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/sanskrit2.PDF"><button class="qpbtn"><h3>sankrit</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='english2.pdf'"><h3>english</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/english2.PDF"><button class="qpbtn"><h3>english</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='c++2.pdf'"><h3>c++</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/C++2.PDF"><button class="qpbtn"><h3>c++</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='dbms2.pdf'"><h3>DBMS</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/dbms2.PDF"><button class="qpbtn"><h3>DBMS</h3></button></a>
                 
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='es2.pdf'"><h3>ES</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/es2.PDF"><button class="qpbtn"><h3>ES</h3></button></a>
                 
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='java2.pdf'"><h3>java</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/java2.PDF"><button class="qpbtn"><h3>java</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='cg2.pdf'"><h3>CG</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/cg2.PDF"><button class="qpbtn"><h3>CG</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='dw2.pdf'"><h3>DW</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/dw2.PDF"><button class="qpbtn"><h3>DW</h3></button></a>
                 
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='ic2.pdf'"><h3>IC</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/ic2.PDF"><button class="qpbtn"><h3>IC</h3></button></a>
                 
             </div>
 
@@ -202,40 +201,37 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide slide">
-               <img src="question_Papers.jpg" alt="">
-               <button class="qpbtn"   onclick="location.href='aj3.pdf'"><h3>AJ</h3> </button>
+               <img src="Images/question_Papers.jpg" alt="">
+               <a href="Pdf/Aj3.PDF"><button class="qpbtn"><h3>AJ</h3> </button></a>
             </div>
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='dc3.pdf'"><h3>DC</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/dc3.PDF"><button class="qpbtn"><h3>DC</h3></button></a>
             </div> 
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='os3.pdf'"><h3>OS</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/os3.PDF"><button class="qpbtn"><h3>OS</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn" onclick="location.href='se3.pdf'"><h3>SE</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/se3.PDF"><button class="qpbtn"><h3>SE</h3></button></a>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="question_Papers.jpg" alt="">
-                <button class="qpbtn"  onclick="location.href='cn3.pdf'"><h3>CN</h3></button>
+                <img src="Images/question_Papers.jpg" alt="">
+                <a href="Pdf/cn3.PDF"><button class="qpbtn"><h3>CN</h3></button></a>
              </div>
              <div class="swiper-slide slide">
-                 <img src="question_Papers.jpg" alt="">
-                 <button class="qpbtn" onclick="location.href='net3.pdf'"><h3>.Net</h3></button>
+                 <img src="Images/question_Papers.jpg" alt="">
+                 <a href="Pdf/net3.PDF"><button class="qpbtn"><h3>.Net</h3></button></a>
              </div> 
  
              <div class="swiper-slide slide">
-                 <img src="question_Papers.jpg" alt="">
-                 <button class="qpbtn" onclick="location.href='unix3.pdf'"><h3>Unix</h3></button>
+                 <img src="Images/question_Papers.jpg" alt="">
+                 <a href="Pdf/unix3.PDF"><button class="qpbtn"><h3>Unix</h3></button></a>
              </div>
-
-
-
         </div>
 
      <div class="swiper-pagination"></div>
@@ -250,7 +246,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  
 
 <!-- ---------------- javascript link ---------------- -->
-    <script src="Study.js"></script>
+    <script src="js/Study.js"></script>
     
     <%
 }

@@ -11,10 +11,9 @@
 </head>
 <body>
 
-         <%if(session.getAttribute("urs")==null)
+         <%if(session.getAttribute("Users")==null)
 {
-	response.getWriter().print(" <html><body><span style='color:red; position:relative; top:8.5rem; left: 52.4rem;  z-index:5; font-size:1.2rem; font-family: system-ui;'>Session Expired Login Again!</span></body></html>");
-	request.getRequestDispatcher("Login.html").include(request, response);
+        	 response.sendRedirect("Login.html");
 }else{
 	%>
  <!----------------header section------------>
@@ -40,31 +39,31 @@
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide slide" style="background:url(home.jpg) no-repeat;">
+            <div class="swiper-slide slide" style="background:url(Images/home.jpg) no-repeat;">
                 <div class="content">
                   <h3> welcome<span>learn,enjoy,educate</span> </h3>
                   <a href="#footer" class="btn">contact us</a>
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background:url(quiz.jpg) no-repeat;">
+            <div class="swiper-slide slide" style="background:url(Images/quiz.jpg) no-repeat;">
                 <div class="content">
                 <h3> quiz<span>play,earn,get rewards</span> </h3>
-                  <a href="Years.html" class="btn">play</a>
+                  <a href="Years.jsp" class="btn">play</a>
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background:url(study.jpg) no-repeat;">
+            <div class="swiper-slide slide" style="background:url(Images/study.jpg) no-repeat;">
                 <div class="content">
                   <h3> study material<span>refer,study</span> </h3>
-                  <a href="Study.html" class="btn">study material</a>
+                  <a href="Study.jsp" class="btn">study material</a>
                 </div>
             </div>
 
-            <div class="swiper-slide slide" style="background:url(rewards.jpg) no-repeat;">
+            <div class="swiper-slide slide" style="background:url(Images/rewards.jpg) no-repeat;">
                 <div class="content">
                   <h3>get rewards <span>Grabe your rewards</span> </h3>
-                  <a href="Rewards.html" class="btn">get</a>
+                  <a href="Rewards.jsp" class="btn">get</a>
                 </div>
             </div>
 
@@ -148,7 +147,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
 
 <!-- ---------------- javascript link ---------------- -->
-    <script src="Home.js"></script> 
+    <script src="js/Home.js"></script> 
 <%
 }
 %>

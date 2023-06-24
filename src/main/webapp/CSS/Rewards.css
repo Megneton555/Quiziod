@@ -216,7 +216,7 @@ section{
     display: grid;
     bottom: 100px;
     height: 100px;
-    margin-top: 1rem;
+    margin: 1rem 0 0 1.5rem;
     cursor: pointer;
 }
 

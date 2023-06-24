@@ -11,10 +11,9 @@
 </head>
 <body>
 
-         <%if(session.getAttribute("urs")==null)
+         <%if(session.getAttribute("Users")==null)
 {
-	response.getWriter().print(" <html><body><span style='color:red; position:relative; top:8.5rem; left: 52.4rem;  z-index:5; font-size:1.2rem; font-family: system-ui;'>Session Expired Login Again!</span></body></html>");
-	request.getRequestDispatcher("Login.html").include(request, response);
+        	 response.sendRedirect("Login.html");
 }else{
 	%>
 	
@@ -51,7 +50,7 @@
             <div class="container" id="containers">
 
                 <div class="shop">
-                    <img src="wallet.webp" class="other-Img" id="other-Img1" alt="" style="width: 14.5rem; position: relative; left: 1.1rem;">
+                    <img src="Images/wallet.webp" class="other-Img" id="other-Img1" alt="" style="width: 14.5rem; position: relative; left: 1.1rem;">
                     <h6 class="brand">Allen Solly</h6>
                     <h3 class="title">leather wallet</h3>
                     <h3 class="points">2</h3>
@@ -59,15 +58,15 @@
                 </div>
 
                 <div class="shop">
-                    <img src="rolex_watch.webp" class="other-Img" id="other-Img2" alt="">
+                    <img src="Images/rolex_watch.webp" class="other-Img" id="other-Img2" alt="">
                     <h6 class="brand">Rolex</h6>
-                    <h3 class="title">Watch used in vikram</h3>
+                    <h3 class="title">Oystersteel and yellow gold</h3>
                     <h3 class="points">25</h3>
                     <button class="butns"> buy</button>
                 </div>
 
                 <div class="shop">
-                    <img src="yellow_shirt.webp" class="other-Img" alt=""  style="height: 12rem; width:10rem; position: relative; left: 3.2rem;;">
+                    <img src="Images/yellow_shirt.webp" class="other-Img" alt=""  style="height: 12rem; width:10rem; position: relative; left: 3.2rem;;">
                     <h6 class="brand">abibbas</h6>
                     <h3 class="title">T-shirt</h3>
                     <h3 class="points">25</h3>
@@ -75,7 +74,7 @@
                 </div>
 
                 <div class="shop">
-                    <img src="shoes.webp" class="other-Img" alt="" style="width: 11.5rem; position: relative; left: 2.4rem;">
+                    <img src="Images/shoes.webp" class="other-Img" alt="" style="width: 11rem; position: relative; left: 2.4rem;">
                     <h6 class="brand">red tape</h6>
                     <h3 class="title">white snikers</h3>
                     <h3 class="points">35</h3>
@@ -83,7 +82,7 @@
                 </div>
 
                 <div class="shop">
-                    <img src="watch_protector.webp" class="other-Img" alt="" >
+                    <img src="Images/watch_protector.webp" class="other-Img" alt="" >
                     <h6 class="brand">spigen</h6>
                     <h3 class="title">Watch case</h3>
                     <h3 class="points">30</h3>
@@ -91,7 +90,7 @@
                 </div>
 
                 <div class="shop">
-                    <img src="neckband.webp" class="other-Img" alt="" style="width: 10.5rem; position: relative; left: 3rem;">
+                    <img src="Images/neckband.webp" class="other-Img" alt="" style="width: 10.5rem; position: relative; left: 3rem;">
                     <h6 class="brand">sony</h6>
                     <h3 class="title">wirless earphone</h3>
                     <h3 class="points">30</h3>
@@ -143,7 +142,7 @@
 </footer>
 
 <!-- ----------- java script link ----------- -->
- <script src="Rewards.js"></script> 
+ <script src="js/Rewards.js"></script> 
 
 <%
 }

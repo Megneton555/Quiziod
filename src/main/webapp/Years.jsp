@@ -8,10 +8,9 @@
   <link rel="stylesheet" href="CSS/Year.css">
 </head>
 <body>
-         <%if(session.getAttribute("urs")==null)
+         <%if(session.getAttribute("Users")==null)
 {
-	response.getWriter().print(" <html><body><span style='color:red; position:relative; top:8.5rem; left: 52.4rem;  z-index:5; font-size:1.2rem; font-family: system-ui;'>Session Expired Login Again!</span></body></html>");
-	request.getRequestDispatcher("Login.html").include(request, response);
+        	 response.sendRedirect("Login.html");
 }else{
 %>
    <div class="container">
