@@ -1,6 +1,6 @@
 
 let questions = [
-{
+  {
     numb: 1,
     question: "What does SIM stands for?",
     answer: "Subscriber Identity Module",
@@ -9,7 +9,7 @@ let questions = [
       "Standard Identity Module",
       "Subscriber Identity Module",
       "None of the above"
-   ]
+    ]
   },
   {
     numb: 2,
@@ -20,7 +20,7 @@ let questions = [
       "Integrated Services Digital Network ",
       "Integrated Services Divide Network",
       "Integrated Survival Digital Network"
-   ]
+    ]
   },
   {
     numb: 3,
@@ -31,7 +31,7 @@ let questions = [
       "5",
       "2",
       "1"
-   ]
+    ]
   },
   {
     numb: 4,
@@ -42,7 +42,7 @@ let questions = [
       "TS Eliot",
       "Oscar Wilde",
       "P Lankesh"
-   ]
+    ]
   },
   {
     numb: 5,
@@ -53,7 +53,7 @@ let questions = [
       "Automatic Resolve Request",
       "Automatic Resend Request",
       "None of the above"
-   ]
+    ]
   },
   {
     numb: 6,
@@ -64,7 +64,7 @@ let questions = [
       "Real wrold entity with attributes and function",
       "Programming Operating System Interface",
       "An entity is an object such as a table or form"
-   ]
+    ]
   },
   {
     numb: 7,
@@ -75,7 +75,7 @@ let questions = [
       "TS Eliot",
       "AK Ramanujan",
       "Robert Forst"
-   ]
+    ]
   },
   {
     numb: 8,
@@ -86,7 +86,7 @@ let questions = [
       "High-Level Data Leakage Control",
       "High-Level Data Language Control",
       "High-Level Data List Control"
-   ]
+    ]
   },
   {
     numb: 9,
@@ -97,7 +97,7 @@ let questions = [
       "To recognize a particular Religion",
       "To recognize all the Religions",
       "None of the above"
-   ]
+    ]
   },
   {
     numb: 10,
@@ -108,7 +108,7 @@ let questions = [
       "An entity is an object such as a table or form",
       "It is processed data with some definite meaning",
       "It is the actual appearance or layout of Information"
-   ]
+    ]
   },
   {
     numb: 11,
@@ -119,7 +119,7 @@ let questions = [
       "Dynamic Host Configure Port",
       "Dynamic Host Component Protocol",
       "Dynamic Host Configuration Performing"
-   ]
+    ]
   },
   {
     numb: 12,
@@ -130,7 +130,7 @@ let questions = [
       "Rabindranath Tagore",
       "George Orwell",
       "John Milton"
-   ]
+    ]
   },
   {
     numb: 13,
@@ -141,7 +141,7 @@ let questions = [
       "26 November 1949",
       "26 November 1959",
       "26 january 1946"
-   ]
+    ]
   },
   {
     numb: 14,
@@ -152,7 +152,7 @@ let questions = [
       "Remote Method Identification",
       "Remote Method Invitation",
       "None of the above"
-   ]
+    ]
   },
   {
     numb: 15,
@@ -163,7 +163,7 @@ let questions = [
       "Portable Organizing System Interface",
       "Portable Oracle System Interface",
       "Portable Operating System Interchange"
-   ]
+    ]
   },
   {
     numb: 16,
@@ -174,7 +174,7 @@ let questions = [
       "Albert Einstein",
       "J Turner",
       "Alan Turing "
-   ]
+    ]
   },
   {
     numb: 17,
@@ -185,7 +185,7 @@ let questions = [
       "Nine Layers",
       "Seven Layers",
       "Four Layers"
-   ]
+    ]
   },
   {
     numb: 18,
@@ -196,7 +196,7 @@ let questions = [
       "23",
       "25",
       "41"
-   ]
+    ]
   },
   {
     numb: 19,
@@ -207,7 +207,7 @@ let questions = [
       "Customer Resource Management",
       "Customer Response Management",
       "None of the above"
-   ]
+    ]
   },
   {
     numb: 20,
@@ -218,7 +218,7 @@ let questions = [
       "Allocated Consistency Isolation Durability",
       "Atomicity Consistency Isolation Durability",
       "None of the above"
-   ]
+    ]
   },
   {
     numb: 21,
@@ -240,7 +240,7 @@ let questions = [
       "Enterprise Resource Pages",
       "Enterprise Resource Planning",
       "Enterprise Resource Program"
-   ]
+    ]
   },
   {
     numb: 23,
@@ -251,7 +251,7 @@ let questions = [
       "V.K Sundaram",
       "T Swaminathan",
       "R.K Trivedi"
-   ]
+    ]
   },
   {
     numb: 24,
@@ -262,7 +262,7 @@ let questions = [
       "Two",
       "Five",
       "Four"
-   ]
+    ]
   },
   {
     numb: 25,
@@ -273,7 +273,6 @@ let questions = [
       "Enterprise Atomicity Integration",
       "Enterprise Automatic Integration",
       "Enterprise Application Integration"
-   ]
+    ]
   },
-
 ];

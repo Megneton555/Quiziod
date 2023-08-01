@@ -1,13 +1,11 @@
 package Controller;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import DAO.Accessdb;
 import DTO.Users;
 
@@ -21,7 +19,6 @@ public class Register extends HttpServlet {
 		long mobile = Long.parseLong(req.getParameter("number"));
 		String course = req.getParameter("course");
 		String password = req.getParameter("pass");
-
 		if (adb.fetchUsers(mobile) == null && adb.fetchUsers(email) == null) {
 			Users urs = new Users();
 			urs.setName(name);
@@ -29,7 +26,6 @@ public class Register extends HttpServlet {
 			urs.setMobile(mobile);
 			urs.setCourse(course);
 			urs.setPassword(password);
-
 			adb.saveUsers(urs);
 	       req.getRequestDispatcher("Login.html").forward(req, resp);
 		}else {

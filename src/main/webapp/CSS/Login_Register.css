@@ -1,38 +1,32 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Poppins:wght@400;700&display=swap');
 
 :root {
     --main-color:#AD4328;
     --dark-color:#11152a;
     --light-color:#d0d4ed;
-
 }
 
-
- *{
+*{
     margin:0;
     padding:0;
 }
-
 
 *, ::before, ::after{
     box-sizing: border-box;
 }
 
-
 body{
-      font-family: 'Poppins', sans-serif;
-      font-size:14px;
-      font-weight:400;
-      line-height:1.8;
-      color:var(--dark-color);
-      background-color: #efefef;
-     }
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.8;
+    color:var(--dark-color);
+    background-color: #efefef;
+}
 
 a {
     text-decoration:none;
 }
-
 
 h2{
     font-size: 3em;
@@ -43,11 +37,10 @@ h2{
 }
 
 .container{
-        max-width:1100px;
-        margin: 0 auto;
-        }
+    max-width:1100px;
+    margin: 0 auto;
+}
     
-
 .wrapper>div {
     display: flex;
     flex-direction: column;
@@ -58,23 +51,18 @@ h2{
     background-color: var(--main-color);
     overflow: hidden;
     box-shadow:rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
-  
 }
   
-
-    :is(.login, .signup)> div{
-        position:relative;
-        flex: 1 0 50%;
-        padding: 60px;
-    }
-
+:is(.login, .signup)> div{
+    position:relative;
+    flex: 1 0 50%;
+    padding: 60px;
+}
 
 .content-heading .y-style {
     display:flex;
     flex-direction:column;
 }
-
-
 
 select{
     border: 1px solid var(--light-color);
@@ -99,7 +87,6 @@ select{
     cursor: pointer;
 }
 
-
 #number,#password,#confirmpass{
     position: relative;
     bottom: 1rem;
@@ -109,38 +96,32 @@ select{
     color: red;
 }
 
+.logo a{
+    display: inline-block;
+    margin-bottom:60px;
+    font-size:18px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
 
-    .logo a{
-        display: inline-block;
-        margin-bottom:60px;
-        font-size:18px;
-        font-weight: 700;
-        color: var(--dark-color);
-    }
-
-
-    .logo span{
-        color:#f8f4f6;
-    }
-
+.logo span{
+    color:#f8f4f6;
+}
     
-   .content-heading p{
+.content-heading p{
     color: var(--light-color);
 
 }
-
 
 .content-form{
     display:flex;
     flex-direction:column;
     justify-content:center;
 }
-
     
 .welcome{
     text-align:center;
 }
-
 
 form input:not(#terms,#remember){
     font-family:inherit;
@@ -152,27 +133,20 @@ form input:not(#terms,#remember){
     border: 1px solid var(--light-color);
 }
 
-
-
 form input::placeholder{
-color: #c8cbe1;
+    color: #c8cbe1;
 }
-
-
-
 
 input[type="number"]::-webkit-inner-spin-button{
     display: none;
 }
-
 
 .remember{
     position: relative;
     top: 1rem;
 }
 
-
-  form button{
+form button{
     background-color: #ea123a;
     color: white;
     width: 100%;
@@ -187,20 +161,16 @@ input[type="number"]::-webkit-inner-spin-button{
     font-family: inherit;
 }
 
-
 button:hover{
     background-color:var(--dark-color);
 }
 
-    
-  
 .afterform{
     text-align: center;
     margin-top: -6px;
     position: relative;
     top: 1.5rem;
 }
-
 
 .afterform1{
     text-align: center;
@@ -209,42 +179,37 @@ button:hover{
     bottom: 3.4rem;
 }
 
+form .check{
+    position: absolute;
+    padding-left: 2px;
+    font-size: 12px;
+    float: left;
+    bottom: 2.3rem;
 
+}
 
-    form .check{
-            position: absolute;
-		    padding-left: 2px;
-		    font-size: 12px;
-		    float: left;
-		    bottom: 2.3rem;
+input[type="checkbox"]{
+    position: relative;
+    right: 2.35rem;
+    bottom: 1.24rem;
+}
 
-    }
+form .forgot{
+    float: right;
+    font-size: 12px;
+    position: relative;
+    bottom: 3.65rem;
+    color: black;
+}
+
+.forgot:hover{
+    color: #AD4328;
+    border: none;
+}
     
-    input[type="checkbox"]{
-        position: relative;
-        right: 2.35rem;
-        bottom: 1.24rem;
-    }
-
-
-    form .forgot{
-        float: right;
-        font-size: 12px;
-        position: relative;
-        bottom: 3.65rem;
-        color: black;
-    }
-
-    .forgot:hover{
-        color: #AD4328;
-        border: none;
-    }
-    
-
 form label a, .afterform a{
     color:var(--main-color);
 }
-
 
 form label a, .afterform1 a{
     color:var(--main-color);
@@ -255,33 +220,27 @@ form label a, .afterform1 a{
     top: 2.5rem;
 }
 
-
-   form :is(p, label) a:hover, .afterform a:hover{
+form :is(p, label) a:hover, .afterform a:hover{
     border-bottom: 1px dotted;
 }
-
 
 form :is(p, label) a:hover, .afterform1 a:hover{
     border-bottom: 1px dotted;
 }
 
-
-
-    .content-form::before{
-        content:'';
-        position:absolute;
-        width:300%;
-        height:200%;
-        background-color: white;
-        border-radius:50%;
-        transform:translate3d(-27%, 21%, 0);
-       -webkit-transform:translate(-27, 21%, 0);
-        animation: move 1s cubic-bezier(0.39, 0.575, 0.565, 1)both;
-       -webkit-animation: move 1s cubic-bezier(0.39, 0.575, 0.565, 1)both ;
-    }
+.content-form::before{
+    content:'';
+    position:absolute;
+    width:300%;
+    height:200%;
+    background-color: white;
+    border-radius:50%;
+    transform:translate3d(-27%, 21%, 0);
+    -webkit-transform:translate(-27, 21%, 0);
+    animation: move 1s cubic-bezier(0.39, 0.575, 0.565, 1)both;
+    -webkit-animation: move 1s cubic-bezier(0.39, 0.575, 0.565, 1)both ;
+}
     
-
-
 @keyframes move{
     from{
         opacity:0;
@@ -292,8 +251,6 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     }
 }
 
-
-
 .y-style{
     position:relative;
     bottom: 1rem;
@@ -301,9 +258,7 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     -webkit-transform: translate3d(0, 20%, 0);
     animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1)both;
     -webkit-animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1)both;
-
 }
-
 
 .yst{
     position:relative;
@@ -313,8 +268,6 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1)both;
     -webkit-animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1)both;
 }
-
-
 
 @keyframes fade-in{
     from {
@@ -326,64 +279,12 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     }
 }
 
-
-
 .y-style{
     transform: translate3d(0,0,0);
 }
 
-
-
-    @media screen and (min-width: 768px){
-        .wrapper>div {
-            flex-direction:row;
-            max-width:800px;
-        }
-        
-
-
- .signup   .content-heading .y-style{
-    height:100%;
-    justify-content: space-between;
-}
-
-
-
-    .content-form::before{
-        width:200%;
-        transform:translate3d(-18%, -10%, 0);
-        -webkit-transform:translate3d(-18%, -10%, 0);
-    }
-
-
-
-  .welcome{
-    text-align:left;
-    margin:15em 0 auto;
-}
-
-  .welcome2{
-    text-align:left;
-    margin:23em 0 auto;
-}
-
-
-    @keyFrames move{
-        from {
-            opacity:0;
-            transform:translate3d(0, -100%, 0);
-        }
-        to{
-            opacity:1;
-        }
-    }
-}
-
- 
 .sign{
     text-align: center;
-  
-
 }
 
 .social-media{
@@ -391,7 +292,6 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     top: 1.6rem;
     left: 1.65rem;
 }
-
 
 .social-media a {
     display: inline-flex;
@@ -408,8 +308,6 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     text-decoration: none;
     margin: -17px 15px 30px 0;
     transition: all 0s ease;
-
-
 }
 
 .ig:hover{
@@ -434,4 +332,43 @@ form :is(p, label) a:hover, .afterform1 a:hover{
     background-color: #EA4335;
     color: white;
     border: 2px solid #EA4335;
+}
+
+@media screen and (min-width: 768px){
+    .wrapper>div {
+        flex-direction:row;
+        max-width:800px;
+    }
+        
+    .signup   .content-heading .y-style{
+        height:100%;
+        justify-content: space-between;
+    }
+
+    .content-form::before{
+        width:200%;
+        transform:translate3d(-18%, -10%, 0);
+        -webkit-transform:translate3d(-18%, -10%, 0);
+    }
+
+  .welcome{
+        text-align:left;
+        margin:15em 0 auto;
+    }
+
+  .welcome2{
+        text-align:left;
+        margin:23em 0 auto;
+    }
+
+
+    @keyFrames move{
+        from {
+            opacity:0;
+            transform:translate3d(0, -100%, 0);
+        }
+        to{
+            opacity:1;
+        }
+    }
 }

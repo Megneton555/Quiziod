@@ -1,86 +1,82 @@
 let questions = [
   {
-  numb: 1,
-  question: "What does HTML stand for?",
-  answer: "Hyper Text Markup Language",
-  options: [
-    "Hyper Text Preprocessor",
-    "Hyper Text Markup Language",
-    "Hyper Text Multiple Language",
-    "Hyper Tool Multi Language"
-  ]
-},
+    numb: 1,
+    question: "What does HTML stand for?",
+    answer: "Hyper Text Markup Language",
+    options: [
+      "Hyper Text Preprocessor",
+      "Hyper Text Markup Language",
+      "Hyper Text Multiple Language",
+      "Hyper Tool Multi Language"
+    ]
+  },
   {
-  numb: 2,
-  question: "What does CSS stand for?",
-  answer: "Cascading Style Sheet",
-  options: [
-    "Common Style Sheet",
-    "Colorful Style Sheet",
-    "Computer Style Sheet",
-    "Cascading Style Sheet"
-  ]
-},
+    numb: 2,
+    question: "What does CSS stand for?",
+    answer: "Cascading Style Sheet",
+    options: [
+      "Common Style Sheet",
+      "Colorful Style Sheet",
+      "Computer Style Sheet",
+      "Cascading Style Sheet"
+    ]
+  },
   {
-  numb: 3,
-  question: "What does PHP stand for?",
-  answer: "Hypertext Preprocessor",
-  options: [
-    "Hypertext Preprocessor",
-    "Hypertext Programming",
-    "Hypertext Preprogramming",
-    "Hometext Preprocessor"
-  ]
-},
+    numb: 3,
+    question: "What does PHP stand for?",
+    answer: "Hypertext Preprocessor",
+    options: [
+      "Hypertext Preprocessor",
+      "Hypertext Programming",
+      "Hypertext Preprogramming",
+      "Hometext Preprocessor"
+    ]
+  },
   {
-  numb: 4,
-  question: "What does SQL stand for?",
-  answer: "Structured Query Language",
-  options: [
-    "Stylish Question Language",
-    "Stylesheet Query Language",
-    "Statement Question Language",
-    "Structured Query Language"
-  ]
-},
+    numb: 4,
+    question: "What does SQL stand for?",
+    answer: "Structured Query Language",
+    options: [
+      "Stylish Question Language",
+      "Stylesheet Query Language",
+      "Statement Question Language",
+      "Structured Query Language"
+    ]
+  },
   {
-  numb: 5,
-  question: "What does XML stand for?",
-  answer: "eXtensible Markup Language",
-  options: [
-    "eXtensible Markup Language",
-    "eXecutable Multiple Language",
-    "eXTra Multi-Program Language",
-    "eXamine Multiple Language"
-  ]
-},
-
-
-{
-  numb: 6,
-  question: "What is AND operator?",
-  answer: "Logical Multiplication",
-  options: [
-    "Logical Multiplication",
-    "Mathametical Equation",
-    "Logical Expression",
-    "Mathemtical Expression"
- ]
-},
-
-{
-  numb: 7,
-  question: "What does POP stands for?",
-  answer: "Post Office Protocol",
-  options: [
-    "Post Offer Protocol",
-    "Post Operation Production",
-    "Post Operator Producers",
-    "Post Office Protocol"
- ]
-},
-
-   {
+    numb: 5,
+    question: "What does XML stand for?",
+    answer: "eXtensible Markup Language",
+    options: [
+      "eXtensible Markup Language",
+      "eXecutable Multiple Language",
+      "eXTra Multi-Program Language",
+      "eXamine Multiple Language"
+    ]
+  },
+  {
+    numb: 6,
+    question: "What is AND operator?",
+    answer: "Logical Multiplication",
+    options: [
+      "Logical Multiplication",
+      "Mathametical Equation",
+      "Logical Expression",
+      "Mathemtical Expression"
+    ]
+  },
+  {
+    numb: 7,
+    question: "What does POP stands for?",
+    answer: "Post Office Protocol",
+    options: [
+      "Post Offer Protocol",
+      "Post Operation Production",
+      "Post Operator Producers",
+      "Post Office Protocol"
+    ]
+  },
+  {
     numb: 8,
     question: "What is the another name of Boolean algebra?",
     answer: "Switching Algebra",
@@ -89,7 +85,7 @@ let questions = [
       "Switching Algebra",
       "Algebraic Identities",
       "None of above"
-   ]
+    ]
   },
   {
     numb: 9,
@@ -100,7 +96,7 @@ let questions = [
       "1948",
       "1973",
       "1905"
-   ]
+    ]
   },
 
   {
@@ -112,7 +108,7 @@ let questions = [
       "Uninterruptable Port Supply",
       "Uninterruptable Post Supply",
       "Uninteruptable Primitive Supply"
-   ]
+    ]
   },
   {
     numb: 11,
@@ -123,9 +119,8 @@ let questions = [
       "Public",
       "Protected",
       "None of the above"
-   ]
+    ]
   },
-
   {
     numb: 12,
     question: "Which countery has Large Internet Market in the world?",
@@ -135,9 +130,8 @@ let questions = [
       "India",
       "China",
       "Japan"
-   ]
+    ]
   },
-
   {
     numb: 13,
     question: "Who started chipko movement?",
@@ -147,7 +141,7 @@ let questions = [
       "Vandana Shiva",
       "Gandhiji",
       "Goura Devi"
-   ]
+    ]
   },
   {
     numb: 14,
@@ -158,12 +152,8 @@ let questions = [
       "Printable Circular Board",
       "Printed Circuit Base",
       "Printed Circuit Board"
-   ]
+    ]
   },
-
-
-
-
   {
     numb: 15,
     question: "What does SMPS stands for?",
@@ -173,9 +163,8 @@ let questions = [
       "Switch Mode Power Supply",
       "Software Modulus Power Supply",
       "Semi Mode Port Supply"
-   ]
+    ]
   },
-
   {
     numb: 16,
     question: "Which basic gate is named as Inverter?",
@@ -185,7 +174,7 @@ let questions = [
       "NOR gate",
       "AND gate",
       "None of the above"
-   ]
+    ]
   },
   {
     numb: 17,
@@ -196,9 +185,8 @@ let questions = [
       "Charles Babbage",
       "Johnny Depp",
       "Shakespeare"
-   ]
+    ]
   },
-
 
   {
     numb: 18,
@@ -209,7 +197,7 @@ let questions = [
       "Function Tansfer Protocol",
       "File Transfer Prototype",
       "File Transfer Protocol"
-   ]
+    ]
   },
   {
     numb: 19,
@@ -220,7 +208,7 @@ let questions = [
       "A computer is a central unit",
       "Programming Operating System Interface",
       "UNiplexed Informating Computer System"
-   ]
+    ]
   },
 
   {
@@ -232,7 +220,7 @@ let questions = [
       "Object-oriented Programming",
       "Object-organizing Programmer",
       "Object-operating Program"
-   ]
+    ]
   },
   {
     numb: 21,
@@ -243,7 +231,7 @@ let questions = [
       "A class is a instance of a object",
       "An object is a instance of a class",
       "None of the above"
-   ]
+    ]
   },
   {
     numb: 22,
@@ -254,7 +242,7 @@ let questions = [
       "Digital Base Managed System",
       "Data Base Managment System",
       "Digital Boolean Managment System"
-   ]
+    ]
   },
   {
     numb: 23,
@@ -265,7 +253,7 @@ let questions = [
       "8 bit",
       "1 bit",
       "32 bit"
-   ]
+    ]
   },
   {
     numb: 24,
@@ -276,7 +264,7 @@ let questions = [
       "450 to 500 watts",
       "600 to 700 watts",
       "50 to 80 watts"
-   ]
+    ]
   },
   {
     numb: 25,
@@ -287,7 +275,6 @@ let questions = [
       "Accelerated Graphic Ports",
       "Accelerated Game Ports",
       "None of the above"
-   ]
+    ]
   },
-
 ];

@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 body{
-        margin:0;
-        padding:0;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height:100vh;
-        font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
-
 a{
-     text-decoration: none;
-     position:relative;
-     color:#AD4328;
-     font-weight:500;
-     padding: 11px 30px;
-     font-size: 20px;
-     cursor: pointer;
-     display: block;
-     box-sizing:border-box;
-     transition: 0.5s;
-     border-radius: 5px;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    position:relative;
+    color:#AD4328;
+    font-weight:500;
+    padding: 11px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    box-sizing:border-box;
+    transition: 0.5s;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 a:hover{
@@ -31,32 +31,27 @@ a:hover{
     
 }
 
-
  a:before{
-           content: '';
-           position:absolute;
-           top:0;
-           left:0;
-           width:50%;
-           height:100%;
-           background:#AD4328;
-           z-index:-1;
-           transform: scaleX(0);
-           transition:transform 0.5s;
-           transform-origin:left;
-           border-bottom-left-radius:5px;
-           border-top-left-radius:5px;
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    background:#AD4328;
+    z-index:-1;
+    transform: scaleX(0);
+    transition:transform 0.5s;
+    transform-origin:left;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
            
 }
 
-
 a:hover:before{
-
-           transform: scaleX(1);
-           transition:transform 0.5s;
-           transform-origin:right;
-          
-          
+    transform: scaleX(1);
+    transition:transform 0.5s;
+    transform-origin:right;         
 }
 
 a:after{
@@ -72,13 +67,10 @@ a:after{
     transition:transform 0.5s;
     transform-origin:right;
     border-bottom-right-radius:5px;
-    border-top-right-radius:5px;
-    
+    border-top-right-radius:5px;  
 }
 
-
 a:hover:after{
-
     transform: scaleX(1);
     transition:transform 0.5s;
     transform-origin:left;

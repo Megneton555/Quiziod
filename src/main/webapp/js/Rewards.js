@@ -1,6 +1,3 @@
-// header section mediaqueries adjustment
-
-
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
@@ -8,40 +5,23 @@ menu.onclick = () =>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 };
+
 menu.onscroll = () =>{
   menu.classList.toggle('fa-times');
   navbar.classList.toggle('active');
 };
 
-
-
 var cont = document.getElementById("containers");
 var sec2 = document.getElementById("item-box");
 var shop = document.getElementsByClassName("shop");
-
-
-
-//decleration of the required elements of respected image by all .shop divs
-
-
-
 var other_img = cont.getElementsByClassName("other-Img");
 var bname = cont.getElementsByClassName("brand");
 var names = cont.getElementsByClassName("title");
 var pts = cont.getElementsByClassName("points");
-
-
-
-
 var pr_bname = document.getElementById("pr-bname");
 var pr_img = document.getElementById("pr-img");
 var pr_name = document.getElementById("pr-name");
 var pr_pts = document.getElementById("pr-price");
-
-
-
-//showing dialog-box  and details of respected product on click of buy button
-
 let btn = cont.getElementsByClassName("butns");
 
 for (let i = 0 ; i < btn.length ; i++) {
@@ -57,11 +37,9 @@ for (let i = 0 ; i < btn.length ; i++) {
 
         console.log("Button"+btn[i]+"is c;licked");
     })
-    }
+}
 
-// removing dialog-box on click of x mark
-
-var x = document.getElementById("close"); //works on document.getelementbyid
+var x = document.getElementById("close");
 x.addEventListener("click", function() {
     if(sec2.style.display = "block"){
     sec2.style.display = "none";
@@ -71,17 +49,7 @@ x.addEventListener("click", function() {
     }
 })
 
-
-
 let bttn = document.getElementById('btn');
-
 bttn.addEventListener("click",function orderconfirm(){
-    alert("your oredr is confirmed");
+    alert("Your Order is confirmed");
 })
-
-
-
- 
-
-
-

@@ -12,7 +12,6 @@
     --border:.1rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.2);
     --box-shadow-2:0 1.5rem 3rem rgba(0,0,0,.2); 
-
 }
 
 *{
@@ -26,15 +25,10 @@
     transition: none;
 }
 
-
-/*           header section                */
-
-
-/* modefying scrollbar  */
-
 html::-webkit-scrollbar{
     width: 1rem;
 }
+
 html::-webkit-scrollbar-track{
     background-color: var(--white);
 }
@@ -47,7 +41,6 @@ section{
     padding: 5rem 10%;
 }
 
-/* headre section  */
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -66,6 +59,7 @@ section{
     font-size: 2rem;
     color: var(--black);
 }
+
 .header .navbar a{
     font-size: 2rem;
     margin-left: 1rem;
@@ -79,18 +73,13 @@ section{
 .header .navbar a:hover{
     color: var(--main-color);
 }
+
 #menu-btn{
     font-size: 2.5rem;
     cursor: pointer;
     color: var(--black);
     display: none;
 }
-
-/* head section */
-
-
-
-/* rewards heading */
 
 .heading h1{
     text-align: center;
@@ -105,9 +94,6 @@ section{
     margin: 1rem 10rem;
     border-bottom:.1rem solid black;
 }
-    
-    /* body sectiom */
-
 
 .main{
     margin-top: -12rem;
@@ -118,8 +104,6 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(220px,auto));
     gap: 3rem;
 }
-
-
 
 .main .container .shop{
     padding: .5rem;
@@ -147,6 +131,7 @@ section{
 
 .main .container .shop .title{
     padding: 5px;
+    font-size: initial;
 }
 
 .main .container .shop .brand{
@@ -185,10 +170,7 @@ section{
     box-shadow: var(--box-shadow);
     background-color: white;
     padding: 10PX;
-    
-
 }
-
 
 .pr-content{
     position: absolute;
@@ -258,11 +240,6 @@ input{
     display: block;
 }
 
-
-
-/* popup window */
-
-
 .popup{
     width: 400px;
     border-radius: 6px;
@@ -275,10 +252,11 @@ input{
     padding: 10px 50px 20px;
     color:#333;
     position: absolute;
+    transition:  transform 0.4s, top 0.4s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition:  transform 0.4s, top 0.4s;
 }
+
 .open-popup{
     visibility: visible;
     top: 50%;
@@ -290,11 +268,12 @@ input{
     margin-top: -50px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-
 }
+
 .popup h1{ 
     margin: 30px 0 10px;
 }
+
 .popup button{
     width: 300px;
     margin-top: 40px;
@@ -309,15 +288,10 @@ input{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-
 .popup button:hover{
     color: white;
-    background: black;
-    
+    background: black; 
 }
-
-
-/*        footer        */
 
 .footer2{
     background-color: var(--black);
@@ -347,13 +321,6 @@ input{
     color: var(--light-black);
 }
 
-
-
-
-/* media queries  */
-
-
-
 @media(max-width:1024px){ 
     .item-box {
         margin: 14rem 7rem;
@@ -370,11 +337,6 @@ input{
         gap: 2rem;
     }
 }
-
-
-
-
-
 
 @media(max-width:768px){
     #menu-btn{
